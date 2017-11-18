@@ -5,5 +5,6 @@ class A00030CharPrint{
 		char cont = 'A';
 		
 		System.out.print("ASCII value of "+ cont + " is: "+(int)cont);
+		
 	}
 }
