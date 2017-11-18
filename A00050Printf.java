@@ -1,6 +1,6 @@
 class A00050Printf{
 	
-	public static void main(String a[]) {
+	public static void main(String[] args) {
 		
 		int augend = 5;
 		int addend = 7;

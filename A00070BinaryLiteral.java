@@ -1,6 +1,6 @@
 class A00070BinaryLiteral{
 	
-	public static void main(String a[]) {
+	public static void main(String[] args) {
 		
 		int rawNumber;
 		

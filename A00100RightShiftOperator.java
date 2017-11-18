@@ -1,6 +1,6 @@
 class A00100RightShiftOperator{
 	
-	public static void main(String a[]) {
+	public static void main(String[] args) {
 		
 		int numberA = 25;
 		int result;

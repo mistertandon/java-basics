@@ -1,6 +1,6 @@
 class A00060ShorthandOperator{
 	
-	public static void main(String a[]) {
+	public static void main(String[] args) {
 		
 		byte operand = 5;
 		

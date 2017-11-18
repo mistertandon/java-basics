@@ -1,6 +1,6 @@
 class A00030CharPrint{
 	
-	public static void main(String a[]) {
+	public static void main(String[] args) {
 		
 		char cont = 'A';
 		
