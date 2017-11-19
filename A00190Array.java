@@ -3,13 +3,11 @@ public class A00190Array {
 
 	public static void main(String[] args) {
 
-		int arrayCont[], iterationInit, iterationLimit;
+		int arrayCont[], iterationInit;
 
 		arrayCont = new int[5];
 
-		iterationLimit = 5;
-
-		for (iterationInit = 0; iterationInit < iterationLimit; iterationInit++) {
+		for (iterationInit = 0; iterationInit < arrayCont.length; iterationInit++) {
 
 			arrayCont[iterationInit] = iterationInit + 2;
 
