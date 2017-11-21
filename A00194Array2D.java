@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class A00193Array2D {
+public class A00194Array2D {
 
 	public static void main(String[] args) {
 		
