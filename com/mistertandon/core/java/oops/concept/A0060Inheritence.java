@@ -4,20 +4,14 @@ public class A0060Inheritence {
 
 	public static void main(String[] args) {
 
-		AddMulSub addMulSubObj = new AddMulSub();
+		AddMulSub addMulSubObj = new AddMulSub(7, 5);
 
-		addMulSubObj.setOperandA(4);
-		addMulSubObj.setOperandB(45);
 		addMulSubObj.getSum();
 		addMulSubObj.displaySum();
 
-		addMulSubObj.setOperandA(2);
-		addMulSubObj.setOperandB(23);
 		addMulSubObj.getMultiplication();
 		addMulSubObj.displayMultiplication();
 		
-		addMulSubObj.setOperandA(20);
-		addMulSubObj.setOperandB(2);
 		addMulSubObj.getSubtrahend();
 		addMulSubObj.displaySubtraction();		
 
@@ -32,13 +26,9 @@ class Addition {
 
 	public int result;
 
-	public void setOperandA(int augend) {
+	public Addition(int augend, int addend) {
 
 		operandA = augend;
-	}
-
-	public void setOperandB(int addend) {
-
 		operandB = addend;
 	}
 
@@ -55,7 +45,12 @@ class Addition {
 }
 
 class AddMul extends Addition {
-
+	
+	public AddMul(int operandA, int operandB) {
+		
+		super(operandA, operandB);
+	}
+	
 	public void getMultiplication() {
 
 		result = operandA * operandB;
@@ -69,6 +64,11 @@ class AddMul extends Addition {
 
 class AddMulSub extends AddMul {
 
+	public AddMulSub(int operandA, int operandB) {
+		
+		super(operandA, operandB);
+	}
+	
 	public void getSubtrahend() {
 
 		result = operandA - operandB;
