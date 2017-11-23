@@ -6,13 +6,13 @@ public class A0060Inheritence {
 
 		Multiplication multiplicationObj = new Multiplication();
 
-		multiplicationObj.setAugend(4);
-		multiplicationObj.setAddend(45);
+		multiplicationObj.setOperandA(4);
+		multiplicationObj.setOperandB(45);
 		multiplicationObj.getSum();
 		multiplicationObj.displaySum();
 
-		multiplicationObj.setMultiplicand(2);
-		multiplicationObj.setMultiplier(23);
+		multiplicationObj.setOperandA(2);
+		multiplicationObj.setOperandB(23);
 		multiplicationObj.getMultiplication();
 		multiplicationObj.displayMultiplication();
 
@@ -27,12 +27,12 @@ class SumII {
 
 	public int result;
 
-	public void setAugend(int augend) {
+	public void setOperandA(int augend) {
 
 		operandA = augend;
 	}
 
-	public void setAddend(int addend) {
+	public void setOperandB(int addend) {
 
 		operandB = addend;
 	}
@@ -50,16 +50,6 @@ class SumII {
 }
 
 class Multiplication extends SumII {
-
-	public void setMultiplicand(int multiplicand) {
-
-		operandA = multiplicand;
-	}
-
-	public void setMultiplier(int multiplier) {
-
-		operandB = multiplier;
-	}
 
 	public void getMultiplication() {
 
