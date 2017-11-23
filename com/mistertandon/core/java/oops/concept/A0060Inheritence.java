@@ -4,22 +4,27 @@ public class A0060Inheritence {
 
 	public static void main(String[] args) {
 
-		Multiplication multiplicationObj = new Multiplication();
+		AddMulSub addMulObj = new AddMulSub();
 
-		multiplicationObj.setOperandA(4);
-		multiplicationObj.setOperandB(45);
-		multiplicationObj.getSum();
-		multiplicationObj.displaySum();
+		addMulObj.setOperandA(4);
+		addMulObj.setOperandB(45);
+		addMulObj.getSum();
+		addMulObj.displaySum();
 
-		multiplicationObj.setOperandA(2);
-		multiplicationObj.setOperandB(23);
-		multiplicationObj.getMultiplication();
-		multiplicationObj.displayMultiplication();
+		addMulObj.setOperandA(2);
+		addMulObj.setOperandB(23);
+		addMulObj.getMultiplication();
+		addMulObj.displayMultiplication();
+		
+		addMulObj.setOperandA(20);
+		addMulObj.setOperandB(2);
+		addMulObj.getSubtrahend();
+		addMulObj.displaySubtraction();		
 
 	}
 }
 
-class SumII {
+class Addition {
 
 	public int operandA;
 
@@ -49,7 +54,7 @@ class SumII {
 
 }
 
-class Multiplication extends SumII {
+class AddMul extends Addition {
 
 	public void getMultiplication() {
 
@@ -59,5 +64,18 @@ class Multiplication extends SumII {
 	public void displayMultiplication() {
 
 		System.out.printf("Multiplication of Multiplier %d and Multiplicand %d is: %d\n", operandA, operandB, result);
+	}
+}
+
+class AddMulSub extends AddMul {
+
+	public void getSubtrahend() {
+
+		result = operandA - operandB;
+	}
+
+	public void displaySubtraction() {
+
+		System.out.printf("Subtraction of Minuend %d and Subtrahend %d is: %d\n", operandA, operandB, result);
 	}
 }
