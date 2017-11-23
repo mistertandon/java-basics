@@ -4,22 +4,22 @@ public class A0060Inheritence {
 
 	public static void main(String[] args) {
 
-		AddMulSub addMulObj = new AddMulSub();
+		AddMulSub addMulSubObj = new AddMulSub();
 
-		addMulObj.setOperandA(4);
-		addMulObj.setOperandB(45);
-		addMulObj.getSum();
-		addMulObj.displaySum();
+		addMulSubObj.setOperandA(4);
+		addMulSubObj.setOperandB(45);
+		addMulSubObj.getSum();
+		addMulSubObj.displaySum();
 
-		addMulObj.setOperandA(2);
-		addMulObj.setOperandB(23);
-		addMulObj.getMultiplication();
-		addMulObj.displayMultiplication();
+		addMulSubObj.setOperandA(2);
+		addMulSubObj.setOperandB(23);
+		addMulSubObj.getMultiplication();
+		addMulSubObj.displayMultiplication();
 		
-		addMulObj.setOperandA(20);
-		addMulObj.setOperandB(2);
-		addMulObj.getSubtrahend();
-		addMulObj.displaySubtraction();		
+		addMulSubObj.setOperandA(20);
+		addMulSubObj.setOperandB(2);
+		addMulSubObj.getSubtrahend();
+		addMulSubObj.displaySubtraction();		
 
 	}
 }
