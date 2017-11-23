@@ -1,6 +1,6 @@
 package com.mistertandon.core.java.oops.concept;
 
-public class A00230StaticKeyword {
+public class A0030StaticKeyword {
 
 	public static void main(String[] args) {
 

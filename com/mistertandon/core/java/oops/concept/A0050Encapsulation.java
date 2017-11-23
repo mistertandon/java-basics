@@ -1,6 +1,6 @@
 package com.mistertandon.core.java.oops.concept;
 
-public class A00240Encapsulation {
+public class A0050Encapsulation {
 
 	public static void main(String[] args) {
 

@@ -1,6 +1,6 @@
 package com.mistertandon.core.java.oops.concept;
 
-public class A00231StaticCounter {
+public class A0040StaticCounter {
 
 	public static void main(String[] args) {
 		

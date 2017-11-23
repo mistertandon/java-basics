@@ -1,6 +1,6 @@
 package com.mistertandon.core.java.oops.concept;
 
-public class A00220ObjectPassing {
+public class A0020ObjectPassing {
 
 	public static void main(String[] args) {
 
