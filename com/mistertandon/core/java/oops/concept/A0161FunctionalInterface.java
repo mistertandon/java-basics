@@ -1,6 +1,6 @@
 package com.mistertandon.core.java.oops.concept;
 
-public class A0180FunctionalInterface {
+public class A0161FunctionalInterface {
 
 	public static void main(String[] main) {
 
