@@ -4,7 +4,7 @@ public class A0170AnonymousClass {
 
 	public static void main(String[] args) {
 
-		PhoneBuild phoneBuildObj = new PhoneBuild() {
+		PhoneBuildIII phoneBuildObj = new PhoneBuildIII() {
 
 			public void operatingSystem() {
 
@@ -16,7 +16,7 @@ public class A0170AnonymousClass {
 	}
 }
 
-interface PhoneBuild {
+interface PhoneBuildIII {
 
 	public void operatingSystem();
 }
