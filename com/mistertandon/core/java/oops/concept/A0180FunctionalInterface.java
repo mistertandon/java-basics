@@ -4,16 +4,16 @@ public class A0180FunctionalInterface {
 
 	public static void main(String[] main) {
 
-		PhoneBuildIV phoneBuildObj = () -> {
+		PhoneBuildIV<String> phoneBuildObj = () -> {
 
-			System.out.println("Motorola Moto G Turbo Operating system base is Android 5.1.1");
+			return "Motorola Moto G Turbo Operating system base is Android 5.1.1";
 		};
 
-		phoneBuildObj.operatingSystem();
+		System.out.println(phoneBuildObj.operatingSystem());
 	}
 }
 
-interface PhoneBuildIV {
+interface PhoneBuildIV<T> {
 
-	public void operatingSystem();
+	public T operatingSystem();
 }
