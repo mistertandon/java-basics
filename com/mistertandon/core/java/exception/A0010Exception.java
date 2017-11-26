@@ -1,26 +1,30 @@
-package com.mistertandon.core.java.oops.concept;
+package com.mistertandon.core.java.exception;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class A0180Exception {
+public class A0010Exception {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
 		int dividend;
 
 		int divisor;
 
+		BufferedReader bufferedReaderObj = null;
+
 		try {
 
-			BufferedReader bufferedReaderObj = new BufferedReader(new InputStreamReader(System.in));
+			bufferedReaderObj = new BufferedReader(new InputStreamReader(System.in));
 
 			System.out.println("Enter the value of DIVIDEND: ");
 			dividend = Integer.parseInt(bufferedReaderObj.readLine());
 
 			System.out.println("Enter the value of DIVISOR: ");
 			divisor = Integer.parseInt(bufferedReaderObj.readLine());
+			if (divisor > 0)
+				throw new ArithmeticException("Divisor value can\'t be Zero");
 
 			Divide divideObj = new Divide(dividend, divisor);
 
@@ -29,13 +33,16 @@ public class A0180Exception {
 
 		} catch (IOException e) {
 
-			System.out.println("Arithmetic Eception occur.");
+			System.out.println("IO Eception occur.");
 		} catch (ArithmeticException e) {
 
-			System.out.println("Arithmetic Eception occur.");
+			System.out.println(e);
 		} catch (Exception e) {
 
 			System.out.println("General Eception occur.");
+		} finally {
+
+			bufferedReaderObj.close();
 		}
 
 	}
@@ -57,16 +64,7 @@ class Divide {
 
 	public void makeDivision() {
 
-		try {
-
-			quotient = dividend / divisor;
-		} catch (ArithmeticException e) {
-
-			System.out.println("Arithmetic Eception occur.");
-		} catch (Exception e) {
-
-			System.out.println("General Eception occur.");
-		}
+		quotient = dividend / divisor;
 	}
 
 	public void displayQuotient() {
