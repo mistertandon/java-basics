@@ -1,6 +1,7 @@
 package com.mistertandon.core.java.oops.concept;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class A0180Exception {
@@ -8,8 +9,8 @@ public class A0180Exception {
 	public static void main(String[] args) {
 
 		int dividend;
+
 		int divisor;
-		int quotient;
 
 		try {
 
@@ -23,6 +24,9 @@ public class A0180Exception {
 			divideObj.makeDivision();
 			divideObj.displayQuotient();
 
+		} catch (IOException e) {
+
+			System.out.println("Arithmetic Eception occur.");
 		} catch (ArithmeticException e) {
 
 			System.out.println("Arithmetic Eception occur.");
