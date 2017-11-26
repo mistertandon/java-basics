@@ -16,7 +16,10 @@ public class A0180Exception {
 
 			BufferedReader bufferedReaderObj = new BufferedReader(new InputStreamReader(System.in));
 
+			System.out.println("Enter the value of DIVIDEND: ");
 			dividend = Integer.parseInt(bufferedReaderObj.readLine());
+
+			System.out.println("Enter the value of DIVISOR: ");
 			divisor = Integer.parseInt(bufferedReaderObj.readLine());
 
 			Divide divideObj = new Divide(dividend, divisor);
